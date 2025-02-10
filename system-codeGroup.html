@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>코드관리</title>
+  <title>코드그룹관리</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -362,12 +362,12 @@
         </a>
         <ul id="system-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
           <li>
-            <a href="system-code.html" class="active">
+            <a href="system-code.html">
               <i class="bi bi-circle"></i><span>코드관리</span>
             </a>
           </li>
           <li>
-            <a href="system-codeGroup.html">
+            <a href="system-code-group.html" class="active">
               <i class="bi bi-circle"></i><span>코드그룹관리</span>
             </a>
           </li>
@@ -410,6 +410,10 @@
 
   <!-- ******************************************************************************* -->
 
+
+
+
+
   <!-- Main -->
   <main id="main" class="main">
 
@@ -419,11 +423,11 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">시스템관리</li>
-          <li class="breadcrumb-item active">코드관리</li>
+          <li class="breadcrumb-item active">코드그룹관리</li>
         </ol>
       </nav>
 
-      <h1 style="font-weight: bold;">Code</h1>
+      <h1 style="font-weight: bold;">Code Group</h1>
 
       <div class="row mb-3 mt-3">
         <div class="col-2">
@@ -463,10 +467,7 @@
             <option selected>검색구분</option>
             <option value="1">코드그룹 코드</option>
             <option value="2">코드그룹 이름</option>
-            <option value="3">코드</option>
-            <option value="4">대체 코드</option>
-            <option value="5">코드 이름</option>
-            <option value="6">코드 이름(영문)</option>
+            <option value="3">코드그룹 이름(영문)</option>
           </select>
         </div>
         <div class="col-2">
@@ -491,7 +492,7 @@
 
               <div class="row">
                 <div class="col">
-                  <h5 class="card-title">Total: 162</h5>
+                  <h5 class="card-title">Total: 42</h5>
                 </div>
                 <div class="col-2 pt-2" style="display: inline-block; float: right;">
                   <select class="form-select" aria-label="Default select example">
@@ -519,10 +520,8 @@
                       <th>사용</th>
                       <th>코드그룹 코드</th>
                       <th>코드그룹 이름</th>
-                      <th>코드</th>
-                      <th>대체 코드</th>
-                      <th>코드 이름</th>
-                      <th>코드 이름(영문)</th>
+                      <th>코드그룹 이름(영문)</th>
+                      <th>갯수</th>
                       <th>순서</th>
                       <th>등록일</th>
                       <th>수정일</th>
@@ -538,14 +537,12 @@
                           </label>
                         </div>
                       </td>
-                      <td>162</td>
+                      <td>42</td>
                       <td>Y</td>
                       <td>42</td>
-                      <td>작품.기타사이트유형</td>
-                      <td>381</td>
+                      <td style="color:blue">작품.기타사이트유형</td>
                       <td></td>
-                      <td style="color:blue">공식홈페이지</td>
-                      <td></td>
+                      <td>8</td>
                       <td>1</td>
                       <td></td>
                       <td></td>
@@ -558,34 +555,12 @@
                           </label>
                         </div>
                       </td>
-                      <td>161</td>
-                      <td>Y</td>
-                      <td>42</td>
-                      <td>작품.기타사이트유형</td>
-                      <td>382</td>
-                      <td></td>
-                      <td style="color:blue">기타사이트</td>
-                      <td></td>
-                      <td>2</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                          <label class="form-check-label" for="flexCheckDefault">
-                          </label>
-                        </div>
-                      </td>
-                      <td>160</td>
+                      <td>41</td>
                       <td>Y</td>
                       <td>41</td>
-                      <td>작품.연재사이트</td>
-                      <td>372</td>
+                      <td style="color:blue">작품.연재사이트</td>
                       <td></td>
-                      <td style="color:blue">네이버웹툰</td>
-                      <td></td>
+                      <td>9</td>
                       <td>1</td>
                       <td></td>
                       <td></td>
@@ -598,15 +573,13 @@
                           </label>
                         </div>
                       </td>
-                      <td>159</td>
+                      <td>40</td>
                       <td>Y</td>
-                      <td>41</td>
-                      <td>작품.연재사이트</td>
-                      <td>372</td>
+                      <td>40</td>
+                      <td style="color:blue">결제.구매자거래상태</td>
                       <td></td>
-                      <td style="color:blue">카카오웹툰</td>
-                      <td></td>
-                      <td>2</td>
+                      <td>9</td>
+                      <td>1</td>
                       <td></td>
                       <td></td>
                     </tr>
@@ -618,15 +591,13 @@
                           </label>
                         </div>
                       </td>
-                      <td>158</td>
+                      <td>39</td>
                       <td>Y</td>
-                      <td>41</td>
-                      <td>작품.연재사이트</td>
-                      <td>374</td>
+                      <td>39</td>
+                      <td style="color:blue">결제.판매자거래상태</td>
                       <td></td>
-                      <td style="color:blue">버프툰</td>
-                      <td></td>
-                      <td>3</td>
+                      <td>10</td>
+                      <td>1</td>
                       <td></td>
                       <td></td>
                     </tr>
@@ -638,14 +609,30 @@
                           </label>
                         </div>
                       </td>
-                      <td>157</td>
+                      <td>38</td>
                       <td>Y</td>
-                      <td>41</td>
-                      <td>작품.연재사이트</td>
-                      <td>381</td>
+                      <td>38</td>
+                      <td style="color:blue">결제.승인상태</td>
                       <td></td>
-                      <td style="color:blue">공식홈페이지</td>
+                      <td>7</td>
+                      <td>1</td>
                       <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                          </label>
+                        </div>
+                      </td>
+                      <td>37</td>
+                      <td>N</td>
+                      <td>37</td>
+                      <td style="color:blue">결제.승인상태1</td>
+                      <td></td>
+                      <td>1</td>
                       <td>1</td>
                       <td></td>
                       <td></td>
@@ -688,13 +675,10 @@
                 </div>
                 <div class="col">
                   <div style="float: right;">
-                    <a href="#" class="btn btn-primary" title="Upload new profile image">
-                      <i class="ri-upload-line"></i>
-                    </a>
                     <a href="#" class="btn btn-success" title="Remove my profile image">
                       <i class="ri-file-excel-line"></i>
                     </a>
-                    <a href="system-code-register.html" class="btn btn-primary" title="Remove my profile image">
+                    <a href="system-codeGroup-register.html" class="btn btn-primary" title="Remove my profile image">
                       <i class="ri-add-line"></i>
                     </a>
                   </div>
@@ -710,6 +694,10 @@
   </main><!-- End #main -->
 
   <!-- ******************************************************************************* -->
+
+
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
